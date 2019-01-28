@@ -101,6 +101,9 @@ public class MyListArray {
         obj.delete();
         System.out.println("list");
         obj.display();
+        obj.sort();
+        System.out.println("sorted list in decreasing order");
+        obj.display();
         sc.close();
     }
 }
