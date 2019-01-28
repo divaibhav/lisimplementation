@@ -59,8 +59,8 @@ public class MyListArray {
        }
     }
     //sorting in descending order
-    public int[] sort(){
-        int[] response=null;
+    public void sort(){
+
         for(int j=0;j<last;j++) {
             for (int i = 0; i < last; i++) {
                 if (list[i] < list[i + 1]) {
@@ -70,10 +70,7 @@ public class MyListArray {
                 }
             }
         }
-        response=list;
 
-
-        return response;
     }
 
     public MyListArray(int last, int[] list) {
