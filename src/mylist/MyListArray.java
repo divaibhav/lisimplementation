@@ -99,6 +99,7 @@ public class MyListArray {
         obj.delete();
         System.out.println("list");
         obj.display();
+        sc.close();
     }
 }
 
