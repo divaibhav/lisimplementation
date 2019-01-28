@@ -65,6 +65,7 @@ public class MyListArray {
                 }
             }
         }
+        response=list;
 
 
         return response;
@@ -75,7 +76,8 @@ public class MyListArray {
         this.list = list;
     }
 
-    public static void main(String[] args) {
+    public static void main(String... args) {
+        String[] copy=args;
         int[] list=new int[10];
         int last=-1;
         MyListArray obj=new MyListArray(last,list);
