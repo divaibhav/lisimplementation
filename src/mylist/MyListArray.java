@@ -7,12 +7,15 @@ public class MyListArray {
     //last is a position on which insert and delete is permitted
     //it can be named as position
     private int last;
+    //array to store elements
     private int[] list;
 
     public void insert(int element){
         //increment the last and insert
         if(last<list.length-1) {
+            //incrementing last
             last++;
+            //assigning element to last position
             this.list[last] = element;
         }
         else{
@@ -23,7 +26,9 @@ public class MyListArray {
 
     public void delete(){
         if(last>=0) {
+            //to remove we have to update the value at last position by 0 for integer list
             this.list[last] = 0;
+            //decrementing last
             last--;
         }
         else{
